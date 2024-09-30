@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Handjet", sans-serif;
+}
+.main{
+    height: 100vh;
+    position: relative;
+    background-image: radial-gradient(circle at center center, transparent 0%,rgb(0,0,0) 85%),linear-gradient(78deg, rgba(192, 192, 192,0.05) 0%, rgba(192, 192, 192,0.05) 50%,rgba(60, 60, 60,0.05) 50%, rgba(60, 60, 60,0.05) 100%),linear-gradient(227deg, rgba(97, 97, 97,0.05) 0%, rgba(97, 97, 97,0.05) 50%,rgba(52, 52, 52,0.05) 50%, rgba(52, 52, 52,0.05) 100%),linear-gradient(240deg, rgba(98, 98, 98,0.05) 0%, rgba(98, 98, 98,0.05) 50%,rgba(249, 249, 249,0.05) 50%, rgba(249, 249, 249,0.05) 100%),linear-gradient(187deg, rgba(1, 1, 1,0.05) 0%, rgba(1, 1, 1,0.05) 50%,rgba(202, 202, 202,0.05) 50%, rgba(202, 202, 202,0.05) 100%),linear-gradient(101deg, rgba(61, 61, 61,0.05) 0%, rgba(61, 61, 61,0.05) 50%,rgba(254, 254, 254,0.05) 50%, rgba(254, 254, 254,0.05) 100%),linear-gradient(176deg, rgba(237, 237, 237,0.05) 0%, rgba(237, 237, 237,0.05) 50%,rgba(147, 147, 147,0.05) 50%, rgba(147, 147, 147,0.05) 100%),linear-gradient(304deg, rgba(183, 183, 183,0.05) 0%, rgba(183, 183, 183,0.05) 50%,rgba(57, 57, 57,0.05) 50%, rgba(57, 57, 57,0.05) 100%),radial-gradient(circle at center center, hsl(351,4%,12%),hsl(351,4%,12%));
+}
+
+.container{
+    width: 400px;
+    height: 165px;
+    position: absolute;
+    top: 35% ;
+    left: 34%;
+    background-image: repeating-linear-gradient(45deg, rgba(97,97,97,0.1) 0px, rgba(97,97,97,0.1) 2px,transparent 2px, transparent 4px),linear-gradient(90deg, rgb(43,43,43),rgb(43,43,43));
+    border: solid 4px rgb(27, 27, 27);
+    border-radius: 10px;
+}
+.clock span{
+    font-size: 100px;
+    font-weight: 400;
+    color: rgba(116, 255, 47, 0.807);
+    margin: 5px;
+    position: relative;
+}
+#hrs::after{
+    content: 'Hours';
+    font-size: 27px;
+    position: absolute;
+    bottom: -14px;
+    left: 16%;
+}
+#min::after{
+    content: 'Mins';
+    font-size: 27px;
+    position: absolute;
+    bottom: -14px;
+    left: 25%;
+}
+#sec::after{
+    content: 'Sec';
+    font-size: 27px;
+    position: absolute;
+    bottom: -14px;
+    left: 30%;
+}
+
+/* i{
+    position: absolute;
+    right: 10%;
+    transform: translateY(70%);
+    cursor: pointer;
+}
+body.darkMode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.lightMode {
+    background-color: #fff;
+    color: #000;
+} */
+ 
